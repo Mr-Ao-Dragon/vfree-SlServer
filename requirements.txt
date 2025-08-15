@@ -1,0 +1,5 @@
+fastapi~=0.116.0
+redis~=6.2.0
+pydantic~=2.11.7 # 用于数据验证和序列化
+uvicorn~=0.35.0  # 用于运行 FastAPI 应用
+PyJWT~=2.10.1 # 用于生成和验证 JWT 令牌

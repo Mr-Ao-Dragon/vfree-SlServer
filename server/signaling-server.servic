@@ -1,0 +1,16 @@
+[Unit]
+Description=WebRTC Signaling Server
+After=network.target redis-server.service rabbitmq-server.service
+Requires=redis-server.service rabbitmq-server.service
+
+[Service]
+User=charms  # 替换为实际用户名
+Group=charms  # 替换为实际用户组
+WorkingDirectory=/opt/signaling-server
+Environment="PATH=$HOME/.venv/bin"
+ExecStart=$HOME/.venv/bin/uvicorn main:app --host 0.0.0.0 --port 8000
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

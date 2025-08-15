@@ -1,0 +1,3 @@
+# Test your FastAPI endpoints
+
+WEBSOCKET ws://localhost:8000/ws/xxx/123456

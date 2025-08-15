@@ -1,0 +1,14 @@
+.idea
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+*.so
+*.dll
+*.exe
+*.obj
+*.o
+*.a
+*.lib
+*.dylib
+

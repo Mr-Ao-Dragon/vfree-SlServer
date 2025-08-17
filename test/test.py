@@ -54,6 +54,7 @@ async def ws_endpoint(ws: WebSocket, client_id: str):
     try:
         while True:
             text = await ws.receive_text()
+            print("接收消息：",text)
             try:
                 msg = json.loads(text)
                 print("消息：",msg)
